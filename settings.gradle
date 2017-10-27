@@ -1,0 +1,6 @@
+if(null == System.env.MARATHON_HOME) {
+  throw new GradleException("Please set MARATHON_HOME to marathon installation folder before building.")
+} else {
+  logger.warn("Using $System.env.MARATHON_HOME as marathon home.");
+}
+include 'javafx', 'javaswing'

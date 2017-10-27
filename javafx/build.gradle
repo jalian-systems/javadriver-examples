@@ -1,0 +1,7 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+dependencies {
+	compile fileTree(include: ['*.jar'], dir: "$System.env.MARATHON_HOME")
+	compile files('Ensemble8.jar')
+}
